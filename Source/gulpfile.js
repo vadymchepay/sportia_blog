@@ -28,8 +28,8 @@ const config = {
         dest: '/libs'
     },
     img: {
-        src: '/img/**/*.*',
-        dest: '/img'
+        src: '/images/**/*.*',
+        dest: '/images'
     },
     js: {
         src: '/js/**/*.*',

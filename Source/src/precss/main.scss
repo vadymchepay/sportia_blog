@@ -1,12 +1,16 @@
 //Base styles
 
 @import 'normalize';
-//@import 'fonts';
-//@import 'base';
+@import 'fonts';
+@import 'base';
 
 //Elements
 
-//@import 'elements/preloader';
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/content';
+@import 'sections/aside';
+@import 'sections/footer';
 
 //Sections
 

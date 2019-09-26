@@ -1,0 +1,33 @@
+body {
+    font-family: 't';
+    font-weight: 200;
+}
+
+.container {
+    max-width: 1196px;
+}
+
+.cta-text {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.cta-button {
+    display: block;
+    width: 234px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #f6a11a;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
