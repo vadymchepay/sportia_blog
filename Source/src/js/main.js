@@ -9,7 +9,7 @@ $(document).ready(function () {
             }
         }
         if ($(window).innerWidth() <= 767) {
-            var footerOffset = $(".footer").offset().top;
+            var footerOffset = $(".footer").offset().top - ($(window).innerHeight() - $(".footer").innerHeight());
             if ($(window).scrollTop() >= footerOffset) {
                 $(".header-cta").addClass("hiden");
             }
