@@ -8,7 +8,7 @@ $(document).ready(function () {
                 $(".header").removeClass("scroll");
             }
         }
-        if ($(window).innerWidth() <= 767) {
+        if ($(window).innerWidth() <= 991) {
             var footerOffset = $(".footer").offset().top - ($(window).innerHeight() - $(".footer").innerHeight());
             if ($(window).scrollTop() >= footerOffset) {
                 $(".header-cta").addClass("hiden");

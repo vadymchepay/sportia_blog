@@ -61,12 +61,12 @@
     &-social {
         width: 100%;
         max-width: 683px;
-        height: 80px;
+        min-height: 80px;
         border-radius: 10px;
         border: 1px solid #ebebeb;
         background-color: #ffffff;
         padding: 23px 28px;
-        margin:0 auto 22px;
+        margin: 0 auto 22px;
         ul {
             width: 100%;
             margin: 0;
@@ -88,6 +88,7 @@
                 margin-right: 5px;
             }
             &-link {
+                display: block;
                 width: 34px;
                 height: 34px;
                 img {
@@ -140,16 +141,45 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
+    .aside {
+        &-cta {
+            padding: 40px;
+            &-title {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &-subtitle {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            &-text {
+                width: 100%;
+                max-width: 467px;
+                margin: 0 auto 18px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            &-button {
+                height: 43px;
+                border-radius: 21px;
+                font-size: 22px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
     .aside {
         &-cta {
             padding: 83px 88px;
             &-title {
-               font-size: 55px; 
+                font-size: 55px;
                 line-height: 50.71px;
-            }  
+            }
             &-subtitle {
-               font-size: 55px; 
+                font-size: 55px;
                 line-height: 50.71px;
             }
             &-text {
@@ -166,8 +196,96 @@
                 border-radius: 36px;
             }
         }
-        &-social{}
-        &-posts {}
-        
+        &-social {
+            padding: 40px 48px;
+            &-item {
+                margin-right: 14px;
+                span {
+                    font-size: 35px;
+                    margin-right: 12px;
+                }
+                &-link {
+                    width: 59px;
+                    height: 59px;
+                }
+            }
+        }
+        &-posts {
+            padding: 46px 46px 5px;
+            &-title {
+                font-size: 35px;
+                line-height: 41.59px;
+            }
+            &-item {
+                span {
+                    font-size: 26px;
+                    line-height: 34.66px;
+                    a {
+                        width: 21px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .aside {
+        &-cta {
+            padding: 25px;
+            &-title {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            &-subtitle {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            &-text {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto 18px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &-button {
+                height: 44px;
+                font-size: 26px;
+                line-height: 41px;
+                border-radius: 25px;
+            }
+        }
+        &-social {
+            padding: 20px;
+            &-item {
+                margin-right: 8px;
+                span {
+                    font-size: 18px;
+                    margin-right: 4px;
+                }
+                &-link {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+        &-posts {
+            padding: 25px 25px 5px;
+            &-title {
+                font-size: 28px;
+                line-height: 32px;
+            }
+            &-item {
+                span {
+                    font-size: 16px;
+                    line-height: 20px;
+                    a {
+                        width: 12px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
     }
 }
