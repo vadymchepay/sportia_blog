@@ -53,20 +53,24 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1919px) {
     .main {
         .hero {
-            background-position-x: 250px;
+            height: 235px;
+            padding-top: 100px;
+            background-size: 647px 235px;
         }
     }
 }
 
+
 @media (max-width: 991px) {
     .main {
         .hero {
-            height: 593px;
+            height: 500px;
             background-image: url(../../images/hero_bg_mobile.png);
             background-size: cover;
+            background-position: center bottom;
             padding-top: 122px;
             &-title {
                 font-size: 63px;
@@ -83,14 +87,36 @@
 @media (max-width: 575px) {
     .main {
         .hero {
+            height: 400px;
             background-position-x: 50%;
+            padding-top: 80px;
             &-title {
-                font-size: 50px;
+                font-size: 32px;
+                line-height: 36px;
                 text-align: center;
             }
             &-subtitle {
                 text-align: center;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+        .main {
+        .hero {
+ 
+            &-title {
                 font-size: 28px;
+                line-height: 32px;
+                
+            }
+            &-subtitle {
+                
+                font-size: 20px;
+                line-height: 24px
             }
         }
     }

@@ -46,7 +46,7 @@
         url('../fonts/TitilliumWeb-ExtraLight.ttf')  format('truetype'),
         url('../fonts/TitilliumWeb-ExtraLight.otf')  format('truetype'),
        url('../fonts/TitilliumWeb-ExtraLight.svg#TitilliumWeb-ExtraLight') format('svg');
-       font-weight: 400;
+       font-weight: 100;
 }
 @font-face {
   font-family: 't';
@@ -60,7 +60,7 @@
 }
 $regular : 200;
 $italic : 300;
-$extralight : 400;
+$extralight : 100;
 $bold : 500;
 
 
